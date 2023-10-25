@@ -1,22 +1,281 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Sandy's Portfolio</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
     <script>
-        // Some JavaScript here
+      window.onload = function () {
+        const canvas = document.getElementById("my-canvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FFBB5C";
+        ctx.beginPath();
+        ctx.arc(50, 50, 40, 0, Math.PI * 2, false);
+        ctx.fill();
+      };
+
+      window.addEventListener("load", function () {
+        const template = document.getElementById("contact-card-template");
+        const clone = document.importNode(template.content, true);
+        const mainSection = document.getElementById("contact");
+        mainSection.appendChild(clone);
+      });
     </script>
     <style>
-        /* Inline CSS here */
+      body {
+        margin: 20px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Sandy Wu</h1>
+    </header>
 
+    <article>
+      <figure>
+        <picture>
+          <source media="(max-width: 500px)" srcset="./assets/profile-small.jpg" />
+          <source media="(min-width: 1700px)" srcset="./assets/profile-large.jpg" />
+          <img src="./assets/profile-medium.jpg" alt="Profile Picture" />
+        </picture>
+        <figcaption>I love sunrises and sunsets.</figcaption>
+      </figure>
 
+      <table>
+        <tr>
+          <td><canvas id="my-canvas" width="100" height="100"></canvas></td>
+          <td>
+            <svg width="100" height="100">
+              <circle cx="50" cy="50" r="40" fill="#FF9B50" />
+            </svg>
+          </td>
+        </tr>
+      </table>
+      <video controls width="400">
+        <source src="./assets/video.mp4" type="video/mp4" />
+      </video>
+      <br />
+      <audio controls>
+        <source src="./assets/audio.mp3" type="audio/mp3" />
+      </audio>
+    </article>
 
-</body>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
+    <hr />
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <ol>
+          <li>I'm 21 years old.</li>
+          <li>I'm a cat person.</li>
+          <li>
+            I'm a <b>software engineer</b> focused on full-stack development,
+            passionate about using code to tackle daily challenges.
+          </li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>NodeJS</li>
+          <li>SQL</li>
+          <li>NoSQL</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><h3>Happy Cook</h3></li>
+          <p>
+            <strong>Full Stack Development: </strong><em>Solo Developer</em>
+          </p>
+          <ul>
+            <li>
+              Managed 50+ recipes and 35+ unique ingredients on Google Sheets,
+              integrating with MongoDB via Sheets API
+            </li>
+            <li>
+              Implemented Jest unit tests ensuring 100% data accuracy and
+              uniqueness
+            </li>
+            <li>
+              Designed a React frontend for interactive ingredient selection and
+              recipe suggestions, styled in CSS and hosted on Vercel
+            </li>
+            <li>
+              Developed a Node.js backend on Heroku, fetching data from MongoDB
+              and providing relevant YouTube tutorial links
+            </li>
+          </ul>
+          <aside>
+            <details>
+              <summary><i>More Info</i></summary>
+              <a href="https://github.com/syvvu/HappyCook">View on GitHub</a>
+            </details>
+          </aside>
+
+          <li><h3>Animal Pictures Explorer</h3></li>
+          <p><strong>Web App: </strong><em>Solo Developer</em></p>
+          <ul>
+            <li>
+              Constructed a dynamic image viewer interfacing with 'shibe.online'
+              API using Express.js and Axios to fetch user-specified animal
+              images
+            </li>
+            <li>
+              Crafted a responsive UI with CSS, EJS, and native JavaScript,
+              allowing users to choose an animal type and image count
+            </li>
+            <li>
+              Implemented error-handling to manage API disruptions, ensuring
+              consistent user experience
+            </li>
+          </ul>
+          <aside>
+            <details>
+              <summary><i>More Info</i></summary>
+              <a href="https://github.com/syvvu/Animal-Pictures-Explorer"
+                >View on GitHub</a
+              >
+            </details>
+          </aside>
+        </ul>
+        <br />
+        
+        <table>
+          <caption>
+            Projects and Technologies
+          </caption>
+          <colgroup>
+            <col span="2" />
+          </colgroup>
+          <tr>
+            <th>Project</th>
+            <th>Technologies</th>
+          </tr>
+          <tr>
+            <td>Happy Cook</td>
+            <td>
+              HTML, CSS, JavaScript, Google Sheets API, MongoDB, React, NodeJS
+            </td>
+          </tr>
+          <tr>
+            <td>Animal Pictures Explorer</td>
+            <td>CSS, EJS, JavaScript, API, ExpressJS, Axios</td>
+          </tr>
+        </table>
+      </section>
+
+      <hr />
+
+      <div id="contact">
+        <h3>Contact Me</h3>
+      </div>
+
+      <form>
+        <fieldset>
+          <legend>Contact Form</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <br />
+
+          <label for="industry">Industry:</label>
+          <input type="text" id="industry" name="industry" list="industries" />
+          <datalist id="industries">
+            <option value="Tech"></option>
+            <option value="Healthcare"></option>
+            <option value="Finance"></option>
+          </datalist>
+          <br />
+
+          <label for="reason">Reason for Contact:</label>
+          <select id="reason" name="reason">
+            <optgroup label="Job Opportunities">
+              <option value="fulltime">Full-time Position</option>
+              <option value="internship">Internship</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="inquiry">General Inquiry</option>
+              <option value="feedback">Feedback</option>
+            </optgroup>
+          </select>
+          <br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <br />
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+
+      <br />
+      <code>
+        <pre>
+            public class Main {
+                public static void main(String[] args) {
+                    System.out.println("Hello World 🌅");
+                }
+            }
+        </pre>
+      </code>
+
+      <iframe
+        width="1424"
+        height="614"
+        src="https://www.youtube.com/embed/o_kgdCGisso"
+        title="Beautiful Sunrise Time lapse | Unedited | No Copyright Video | Hamilton, New Zealand"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <template id="contact-card-template">
+        <div class="contact-card">
+          <span
+            >Email:
+            <a href="mailto:sandywu0625@gmail.com"
+              >sandywu0625@gmail.com</a
+            ></span
+          >
+          <br />
+          <span
+            >LinkedIn:
+            <a href="https://www.linkedin.com/in/sandyvvu/" target="_blank"
+              >Sandy Wu</a
+            ></span
+          >
+          <br />
+          <span>Github: <a href="https://github.com/syvvu">syvvu</a></span>
+        </div>
+      </template>
+    </main>
+
+    <footer>
+      <p>Sandy Wu © 2023</p>
+    </footer>
+  </body>
 </html>
