@@ -2,8 +2,28 @@
 <html>
   <head>
     <title>Sandy's Portfolio</title>
+
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Sandy Wu's Portfolio, showcasing software engineering skills and projects."
+    />
+    <meta
+      name="keywords"
+      content="Sandy Wu, Portfolio, Software Engineer, Full-Stack, Projects"
+    />
+    <meta property="og:title" content="Sandy Wu's Portfolio" />
+    <meta
+      property="og:description"
+      content="A portfolio website that displays Sandy Wu's software engineering skills, projects, and contact information."
+    />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/5326965/pexels-photo-5326965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    />
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
     <script>
       window.onload = function () {
         const canvas = document.getElementById("my-canvas");
@@ -26,6 +46,23 @@
         margin: 20px;
       }
     </style>
+    <template id="contact-card-template">
+      <div class="contact-card">
+        <span
+          >Email:
+          <a href="mailto:sandywu0625@gmail.com">sandywu0625@gmail.com</a></span
+        >
+        <br />
+        <span
+          >LinkedIn:
+          <a href="https://www.linkedin.com/in/sandyvvu/" target="_blank"
+            >Sandy Wu</a
+          ></span
+        >
+        <br />
+        <span>GitHub: <a href="https://github.com/syvvu">syvvu</a></span>
+      </div>
+    </template>
   </head>
 
   <body>
@@ -36,9 +73,9 @@
     <article>
       <figure>
         <picture>
-          <source media="(max-width: 500px)" srcset="./assets/profile-small.jpg" />
-          <source media="(min-width: 1700px)" srcset="./assets/profile-large.jpg" />
-          <img src="./assets/profile-medium.jpg" alt="Profile Picture" />
+          <source media="(max-width: 500px)" srcset="./profile-small.jpg" />
+          <source media="(min-width: 1700px)" srcset="./profile-large.jpg" />
+          <img src="./profile-medium.jpg" alt="Profile Picture" />
         </picture>
         <figcaption>I love sunrises and sunsets.</figcaption>
       </figure>
@@ -54,11 +91,11 @@
         </tr>
       </table>
       <video controls width="400">
-        <source src="./assets/video.mp4" type="video/mp4" />
+        <source src="./video.mp4" type="video/mp4" />
       </video>
       <br />
       <audio controls>
-        <source src="./assets/audio.mp3" type="audio/mp3" />
+        <source src="./audio.mp3" type="audio/mp3" />
       </audio>
     </article>
 
@@ -66,6 +103,7 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -163,7 +201,7 @@
           </aside>
         </ul>
         <br />
-        
+
         <table>
           <caption>
             Projects and Technologies
@@ -252,30 +290,23 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-
-      <template id="contact-card-template">
-        <div class="contact-card">
-          <span
-            >Email:
-            <a href="mailto:sandywu0625@gmail.com"
-              >sandywu0625@gmail.com</a
-            ></span
-          >
-          <br />
-          <span
-            >LinkedIn:
-            <a href="https://www.linkedin.com/in/sandyvvu/" target="_blank"
-              >Sandy Wu</a
-            ></span
-          >
-          <br />
-          <span>Github: <a href="https://github.com/syvvu">syvvu</a></span>
-        </div>
-      </template>
     </main>
 
     <footer>
       <p>Sandy Wu © 2023</p>
     </footer>
+
+    <hr />
+    <h3>Extra Credit</h3>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>E</mi>
+      <mo>=</mo>
+      <mi>m</mi>
+      <mo>&#8290;</mo>
+      <msup>
+        <mi>c</mi>
+        <mn>2</mn>
+      </msup>
+    </math>
   </body>
 </html>
