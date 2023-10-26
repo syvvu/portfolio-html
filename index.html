@@ -3,26 +3,26 @@
   <head>
     <title>Sandy's Portfolio</title>
 
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta
       name="description"
       content="Sandy Wu's Portfolio, showcasing software engineering skills and projects."
-    />
+    >
     <meta
       name="keywords"
       content="Sandy Wu, Portfolio, Software Engineer, Full-Stack, Projects"
-    />
-    <meta property="og:title" content="Sandy Wu's Portfolio" />
+    >
+    <meta property="og:title" content="Sandy Wu's Portfolio">
     <meta
       property="og:description"
       content="A portfolio website that displays Sandy Wu's software engineering skills, projects, and contact information."
-    />
+    >
     <meta
       property="og:image"
       content="https://images.pexels.com/photos/5326965/pexels-photo-5326965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    />
+    >
 
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
 
     <script>
       window.onload = function () {
@@ -52,14 +52,14 @@
           >Email:
           <a href="mailto:sandywu0625@gmail.com">sandywu0625@gmail.com</a></span
         >
-        <br />
+        <br>
         <span
           >LinkedIn:
           <a href="https://www.linkedin.com/in/sandyvvu/" target="_blank"
             >Sandy Wu</a
           ></span
         >
-        <br />
+        <br>
         <span>GitHub: <a href="https://github.com/syvvu">syvvu</a></span>
       </div>
     </template>
@@ -75,12 +75,12 @@
         <source
           media="(max-width: 500px)"
           srcset="./assets/profile-small.jpg"
-        />
+        >
         <source
           media="(min-width: 1700px)"
           srcset="./assets/profile-large.jpg"
-        />
-        <img src="./assets/profile-medium.jpg" alt="Profile Picture" />
+        >
+        <img src="./assets/profile-medium.jpg" alt="Profile Picture">
       </picture>
       <figcaption>I love sunrises and sunsets.</figcaption>
     </figure>
@@ -90,17 +90,17 @@
         <td><canvas id="my-canvas" width="100" height="100"></canvas></td>
         <td>
           <svg width="100" height="100">
-            <circle cx="50" cy="50" r="40" fill="#FF9B50" />
+            <circle cx="50" cy="50" r="40" fill="#FF9B50">
           </svg>
         </td>
       </tr>
     </table>
     <video controls width="400">
-      <source src="./assets/video.mp4" type="video/mp4" />
+      <source src="./assets/video.mp4" type="video/mp4">
     </video>
-    <br />
+    <br>
     <audio controls>
-      <source src="./assets/audio.mp3" type="audio/mp3" />
+      <source src="./assets/audio.mp3" type="audio/mp3">
     </audio>
 
     <nav>
@@ -112,7 +112,7 @@
       </ul>
     </nav>
 
-    <hr />
+    <hr>
 
     <main>
       <section id="about">
@@ -127,7 +127,7 @@
         </ol>
       </section>
 
-      <hr />
+      <hr>
 
       <section id="skills">
         <h2>Skills</h2>
@@ -144,78 +144,84 @@
         </ul>
       </section>
 
-      <hr />
+      <hr>
 
       <section id="projects">
         <h2>Projects</h2>
         <ul>
-          <article>
-            <h3>Happy Cook</h3>
-            <p>
-              <strong>Full Stack Development: </strong><em>Solo Developer</em>
-            </p>
-            <ul>
-              <li>
-                Managed 50+ recipes and 35+ unique ingredients on Google Sheets,
-                integrating with MongoDB via Sheets API
-              </li>
-              <li>
-                Implemented Jest unit tests ensuring 100% data accuracy and
-                uniqueness
-              </li>
-              <li>
-                Designed a React frontend for interactive ingredient selection
-                and recipe suggestions, styled in CSS and hosted on Vercel
-              </li>
-              <li>
-                Developed a Node.js backend on Heroku, fetching data from
-                MongoDB and providing relevant YouTube tutorial links
-              </li>
-            </ul>
-            <aside>
-              <details>
-                <summary><i>More Info</i></summary>
-                <a href="https://github.com/syvvu/HappyCook">View on GitHub</a>
-              </details>
-            </aside>
-          </article>
-          <article>
-            <h3>Animal Pictures Explorer</h3>
-            <p><strong>Web App: </strong><em>Solo Developer</em></p>
-            <ul>
-              <li>
-                Constructed a dynamic image viewer interfacing with
-                'shibe.online' API using Express.js and Axios to fetch
-                user-specified animal images
-              </li>
-              <li>
-                Crafted a responsive UI with CSS, EJS, and native JavaScript,
-                allowing users to choose an animal type and image count
-              </li>
-              <li>
-                Implemented error-handling to manage API disruptions, ensuring
-                consistent user experience
-              </li>
-            </ul>
-            <aside>
-              <details>
-                <summary><i>More Info</i></summary>
-                <a href="https://github.com/syvvu/Animal-Pictures-Explorer"
-                  >View on GitHub</a
-                >
-              </details>
-            </aside>
-          </article>
+          <li>
+            <article>
+              <h3>Happy Cook</h3>
+              <p>
+                <strong>Full Stack Development: </strong><em>Solo Developer</em>
+              </p>
+              <ul>
+                <li>
+                  Managed 50+ recipes and 35+ unique ingredients on Google
+                  Sheets, integrating with MongoDB via Sheets API
+                </li>
+                <li>
+                  Implemented Jest unit tests ensuring 100% data accuracy and
+                  uniqueness
+                </li>
+                <li>
+                  Designed a React frontend for interactive ingredient selection
+                  and recipe suggestions, styled in CSS and hosted on Vercel
+                </li>
+                <li>
+                  Developed a Node.js backend on Heroku, fetching data from
+                  MongoDB and providing relevant YouTube tutorial links
+                </li>
+              </ul>
+              <aside>
+                <details>
+                  <summary><i>More Info</i></summary>
+                  <a href="https://github.com/syvvu/HappyCook"
+                    >View on GitHub</a
+                  >
+                </details>
+              </aside>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Animal Pictures Explorer</h3>
+              <p><strong>Web App: </strong><em>Solo Developer</em></p>
+              <ul>
+                <li>
+                  Constructed a dynamic image viewer interfacing with
+                  'shibe.online' API using Express.js and Axios to fetch
+                  user-specified animal images
+                </li>
+                <li>
+                  Crafted a responsive UI with CSS, EJS, and native JavaScript,
+                  allowing users to choose an animal type and image count
+                </li>
+                <li>
+                  Implemented error-handling to manage API disruptions, ensuring
+                  consistent user experience
+                </li>
+              </ul>
+              <aside>
+                <details>
+                  <summary><i>More Info</i></summary>
+                  <a href="https://github.com/syvvu/Animal-Pictures-Explorer"
+                    >View on GitHub</a
+                  >
+                </details>
+              </aside>
+            </article>
+          </li>
         </ul>
 
-        <br />
+        <br>
 
         <table>
           <caption>
             Projects and Technologies
           </caption>
           <colgroup>
-            <col span="2" />
+            <col span="2">
           </colgroup>
           <tr>
             <th>Project</th>
@@ -234,7 +240,7 @@
         </table>
       </section>
 
-      <hr />
+      <hr>
 
       <div id="contact">
         <h3>Contact Me</h3>
@@ -245,17 +251,17 @@
           <legend>Contact Form</legend>
 
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" />
-          <br />
+          <input type="text" id="name" name="name">
+          <br>
 
           <label for="industry">Industry:</label>
-          <input type="text" id="industry" name="industry" list="industries" />
+          <input type="text" id="industry" name="industry" list="industries">
           <datalist id="industries">
             <option value="Tech"></option>
             <option value="Healthcare"></option>
             <option value="Finance"></option>
           </datalist>
-          <br />
+          <br>
 
           <label for="reason">Reason for Contact:</label>
           <select id="reason" name="reason">
@@ -268,17 +274,17 @@
               <option value="feedback">Feedback</option>
             </optgroup>
           </select>
-          <br />
+          <br>
 
           <label for="message">Message:</label>
           <textarea id="message" name="message"></textarea>
-          <br />
+          <br>
 
           <button type="submit">Submit</button>
         </fieldset>
       </form>
 
-      <br />
+      <br>
       <pre>
         <code>
           public class Main {
@@ -303,7 +309,7 @@
       <p>Sandy Wu © 2023</p>
     </footer>
 
-    <hr />
+    <hr>
     <h3>Extra Credit</h3>
     <math xmlns="http://www.w3.org/1998/Math/MathML">
       <mi>E</mi>
