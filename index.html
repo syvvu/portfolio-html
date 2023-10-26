@@ -70,40 +70,38 @@
       <h1>Sandy Wu</h1>
     </header>
 
-    <article>
-      <figure>
-        <picture>
-          <source
-            media="(max-width: 500px)"
-            srcset="./assets/profile-small.jpg"
-          />
-          <source
-            media="(min-width: 1700px)"
-            srcset="./assets/profile-large.jpg"
-          />
-          <img src="./assets/profile-medium.jpg" alt="Profile Picture" />
-        </picture>
-        <figcaption>I love sunrises and sunsets.</figcaption>
-      </figure>
+    <figure>
+      <picture>
+        <source
+          media="(max-width: 500px)"
+          srcset="./assets/profile-small.jpg"
+        />
+        <source
+          media="(min-width: 1700px)"
+          srcset="./assets/profile-large.jpg"
+        />
+        <img src="./assets/profile-medium.jpg" alt="Profile Picture" />
+      </picture>
+      <figcaption>I love sunrises and sunsets.</figcaption>
+    </figure>
 
-      <table>
-        <tr>
-          <td><canvas id="my-canvas" width="100" height="100"></canvas></td>
-          <td>
-            <svg width="100" height="100">
-              <circle cx="50" cy="50" r="40" fill="#FF9B50" />
-            </svg>
-          </td>
-        </tr>
-      </table>
-      <video controls width="400">
-        <source src="./assets/video.mp4" type="video/mp4" />
-      </video>
-      <br />
-      <audio controls>
-        <source src="./assets/audio.mp3" type="audio/mp3" />
-      </audio>
-    </article>
+    <table>
+      <tr>
+        <td><canvas id="my-canvas" width="100" height="100"></canvas></td>
+        <td>
+          <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" fill="#FF9B50" />
+          </svg>
+        </td>
+      </tr>
+    </table>
+    <video controls width="400">
+      <source src="./assets/video.mp4" type="video/mp4" />
+    </video>
+    <br />
+    <audio controls>
+      <source src="./assets/audio.mp3" type="audio/mp3" />
+    </audio>
 
     <nav>
       <ul>
@@ -151,62 +149,65 @@
       <section id="projects">
         <h2>Projects</h2>
         <ul>
-          <li><h3>Happy Cook</h3>
-          <p>
-            <strong>Full Stack Development: </strong><em>Solo Developer</em>
-          </p>
-          <ul>
-            <li>
-              Managed 50+ recipes and 35+ unique ingredients on Google Sheets,
-              integrating with MongoDB via Sheets API
-            </li>
-            <li>
-              Implemented Jest unit tests ensuring 100% data accuracy and
-              uniqueness
-            </li>
-            <li>
-              Designed a React frontend for interactive ingredient selection and
-              recipe suggestions, styled in CSS and hosted on Vercel
-            </li>
-            <li>
-              Developed a Node.js backend on Heroku, fetching data from MongoDB
-              and providing relevant YouTube tutorial links
-            </li>
-          </ul>
-          <aside>
-            <details>
-              <summary><i>More Info</i></summary>
-              <a href="https://github.com/syvvu/HappyCook">View on GitHub</a>
-            </details>
-          </aside>
-        </li>
-          <li><h3>Animal Pictures Explorer</h3>
-          <p><strong>Web App: </strong><em>Solo Developer</em></p>
-          <ul>
-            <li>
-              Constructed a dynamic image viewer interfacing with 'shibe.online'
-              API using Express.js and Axios to fetch user-specified animal
-              images
-            </li>
-            <li>
-              Crafted a responsive UI with CSS, EJS, and native JavaScript,
-              allowing users to choose an animal type and image count
-            </li>
-            <li>
-              Implemented error-handling to manage API disruptions, ensuring
-              consistent user experience
-            </li>
-          </ul>
+          <article>
+            <h3>Happy Cook</h3>
+            <p>
+              <strong>Full Stack Development: </strong><em>Solo Developer</em>
+            </p>
+            <ul>
+              <li>
+                Managed 50+ recipes and 35+ unique ingredients on Google Sheets,
+                integrating with MongoDB via Sheets API
+              </li>
+              <li>
+                Implemented Jest unit tests ensuring 100% data accuracy and
+                uniqueness
+              </li>
+              <li>
+                Designed a React frontend for interactive ingredient selection
+                and recipe suggestions, styled in CSS and hosted on Vercel
+              </li>
+              <li>
+                Developed a Node.js backend on Heroku, fetching data from
+                MongoDB and providing relevant YouTube tutorial links
+              </li>
+            </ul>
+            <aside>
+              <details>
+                <summary><i>More Info</i></summary>
+                <a href="https://github.com/syvvu/HappyCook">View on GitHub</a>
+              </details>
+            </aside>
+          </article>
+          <article>
+            <h3>Animal Pictures Explorer</h3>
+            <p><strong>Web App: </strong><em>Solo Developer</em></p>
+            <ul>
+              <li>
+                Constructed a dynamic image viewer interfacing with
+                'shibe.online' API using Express.js and Axios to fetch
+                user-specified animal images
+              </li>
+              <li>
+                Crafted a responsive UI with CSS, EJS, and native JavaScript,
+                allowing users to choose an animal type and image count
+              </li>
+              <li>
+                Implemented error-handling to manage API disruptions, ensuring
+                consistent user experience
+              </li>
+            </ul>
+            <aside>
+              <details>
+                <summary><i>More Info</i></summary>
+                <a href="https://github.com/syvvu/Animal-Pictures-Explorer"
+                  >View on GitHub</a
+                >
+              </details>
+            </aside>
+          </article>
         </ul>
-          <aside>
-            <details>
-              <summary><i>More Info</i></summary>
-              <a href="https://github.com/syvvu/Animal-Pictures-Explorer"
-                >View on GitHub</a
-              >
-            </details>
-          </aside>
-      </li>
+
         <br />
 
         <table>
